@@ -1,6 +1,5 @@
 pipeline {
-    agent {
-        label 'jenkins-node-intern'
+    agent any
     }
     stages {
         stage('clone git backend') {
