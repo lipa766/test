@@ -1,0 +1,9 @@
+# IDE
+.idea/
+
+# Caches
+.pytest_cache/
+__pycache__/
+
+# Reports
+*.xml

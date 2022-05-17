@@ -1,0 +1,13 @@
+/tests
+.git
+.gitignore
+.gitlab-ci.yml
+.idea
+.pylintrc
+requirements.txt
+Jenkinsfile
+Dockerfile
+__pycache__
+README.md
+.dockerignore
+*.xml

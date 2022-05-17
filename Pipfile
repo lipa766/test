@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "*"
+fastapi = "*"
+uvicorn = "*"
+jinja2 = "*"
+python-multipart = "*"
+
+[dev-packages]
+selenium = "*"
+pytest = "*"
+pylint = "*"
+pylint-junit = "*"
+typing-extensions = "*"
+
+[requires]
+python_version = "3.9"
