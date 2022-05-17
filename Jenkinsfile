@@ -3,7 +3,7 @@ pipeline {
         label 'jenkins-node-intern'
     }
     stages {
-        stage('Build docker image') {
+        stage('clone git backend') {
             steps {
                 sh 'cd ..'
                 sh 'git clone https://gitlab.tkhtechnology.com/CCT_114_DEVOPS_INTERNAL_PROJECT/backend'
@@ -11,7 +11,7 @@ pipeline {
                 sh 'docker build . -t backend'
             }
         }
-        stage('Build docker image') {
+        /* stage('Build docker image') {
             steps {
                 sh 'docker build -t internal_project_frontend:${BUILD_NUMBER} -t internal_project_frontend:latest .'
             }
@@ -25,6 +25,6 @@ pipeline {
                     sh "docker push nexus.tkhtechnology.com/interal_project/frontend:latest"
                 }
             }
-        }
+        } */
     }
 }
